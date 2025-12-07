@@ -1,8 +1,18 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "name": "Python + Docker DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "enableNonRootDocker": "true",
+      "moby": "true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+      ]
     }
   }
 }
