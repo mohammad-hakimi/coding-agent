@@ -1,11 +1,7 @@
 {
   "name": "Python + Docker DevContainer",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "enableNonRootDocker": "true",
-      "moby": "true"
-    },
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     }
